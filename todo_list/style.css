@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #360033,#0b8793);
+}
+
+header h2{
+    color:#fff;
+    margin:5rem 0;
+    font-size: 3rem;
+}
+
+header,form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+form{
+    position: relative;
+}
+
+form .search{
+    display: flex;
+
+}
+
+form button,
+form input{
+    padding:0.5rem;
+    font-size: 2rem;
+    border:none;
+    background-color:#fff;
+    outline: none;
+}
+
+form button{
+    color:#fff;
+    background-color:#340436;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+
+form button:hover{
+    background-color:#fff;
+    color:#340436;
+}
+
+select{
+    outline: none;
+    border: none;
+    width: 10rem;
+    padding:1rem;
+    cursor: pointer;
+    
+}
+
+.select{
+    position: relative;
+    margin: 1rem;
+    
+}
+.select::after{
+    content:"\25BC";
+    position: absolute;
+    background-color: #340436;
+    color:#fff;
+    top:0;
+    right:0;
+    padding: 1rem;
+  transition: 0.5s all ease;
+}
+
+.select:hover:after{
+    background-color: #fff;
+    color:#340436;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.todo-list{
+    min-height: 30%;
+    list-style: none;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo{
+    margin:0.5rem;
+   background-color: #fff;
+    color:#000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all ease;
+}
+
+
+
+
+
+.complete-btn,.trash-btn{
+    background-color: red;
+    color:#fff;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+.complete-btn{
+    background-color: #0b8793;
+}
+
+.success,.warning{
+    font-size: 1.5rem;
+    pointer-events: none;
+}
+
+.todo .todo-item{
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.alert-wrapper{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+}
+
+
+.alert-success, .alert-warning{
+    padding:1rem;
+    color:#fff;
+    font-weight: bold;
+    width: 25rem;
+    text-align: center;
+    display: none;
+}
+
+
+.alert-warning{
+    background-color:red;
+}
+
+.alert-success{
+    background-color: green;
+}
+
+
+.fall{
+    transform: translateY(8rem) rotateZ(360deg);
+    opacity: 0;
+}
+
+.completed{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
